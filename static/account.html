@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta | Bee Games</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/account.css">
+
+    <link href="favicon.png" rel="icon"/>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content container">
+            <img class="header__logo" src="images/logo.jpg" alt="Bee Games" title="Bee Games" />
+            <nav class="header__nav">
+                <button class="header__navclose">
+                    <i class="header__icon zmdi zmdi-close zmdi-hc-2x"></i>
+                </button>
+                <a class="header__navitem" href="index.html">Lançamentos</a>
+                <a class="header__navitem" href="#">Ação</a>
+                <a class="header__navitem" href="#">Aventura</a>
+                <a class="header__navitem" href="#">Estratégia</a>
+                <a class="header__navitem" href="#">Esporte</a>
+                <a class="header__navitem" href="#">Simulação</a>
+            </nav>
+            <div>
+                <a class="header__account" href="account.html">
+                    <i class="header__icon zmdi zmdi-account-circle zmdi-hc-2x"></i> Caio
+                </a>
+                <a class="header__cart" href="cart.html">
+                    <i class="header__icon zmdi zmdi-shopping-cart zmdi-hc-2x"></i>
+                </a>
+                <button class="header__navopen">
+                    <i class="header__icon zmdi zmdi-menu zmdi-hc-2x"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="account">
+        <div class="container account__content">
+            <div class="account__nav">
+                <h1 class="account__title">Caio</h1>
+                <div class="account__menu">
+                    <a class="active" href="account.html">Informações de Cadastro</a>
+                    <a href="#">Histórico de Compras</a>
+                    <a href="#">Sair</a>
+                </div>
+            </div>
+            <div class="account__update">
+                <h2 class="account__subtitle">Informações Pessoais</h2>
+                <input class="input" value="Caio Jorge de Menezes Abreu Silva" />
+                <input class="input" value="(16) 98265-7738" />
+                <button class="button">Alterar</button>
+                <h2 class="account__subtitle">Endereço</h2>
+                <input class="input" value="Rua Professora Stella Germano, 60" />
+                <input class="input" value="Ap. 12" />
+                <input class="input" value="13561-090" />
+                <button class="button">Alterar</button>
+                <h2 class="account__subtitle">Alterar Senha</h2>
+                <input class="input" placeholder="Senha Atual" />
+                <input class="input" placeholder="Nova Senha" />
+                <input class="input" placeholder="Repita nova senha" />
+                <button class="button">Alterar</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+</body>
+</html>

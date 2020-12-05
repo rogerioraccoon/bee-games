@@ -1,0 +1,62 @@
+@import "colors";
+
+.account {
+    padding: 50px 0;
+
+    &__content {
+
+        @media(min-width: 768px) {
+            display: flex;
+        }
+
+    }
+
+    &__title {
+        font-size: 3rem;
+        color: $primary-color;
+        font-weight: bold;
+        margin: 25px 0 50px 0;
+    }
+
+    &__subtitle {
+        font-size: 2rem;
+        color: $primary-color;
+        margin: 50px 0 25px 0;
+    }
+
+    &__nav {
+
+        @media(min-width: 768px) {
+            padding: 0 50px 0 0;
+            border-right: 1px solid $primary-color;
+        }
+
+    }
+
+    &__menu {
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            display: block;
+            margin: 0 0 20px 0;
+            font-size: 16px;
+
+            &.active {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__update {
+
+        @media(min-width: 768px) {
+            margin-left: 50px;
+            flex-grow: 1;
+        }
+    }
+
+    .input,
+    .button {
+        max-width: 600px;
+    }
+}

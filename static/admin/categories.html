@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Categorias | Bee Games</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin.css">
+
+    <link href="../favicon.png" rel="icon"../>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content container">
+            <img class="header__logo" src="../images/logo.jpg" alt="Bee Games" title="Bee Games" />
+            <nav class="header__nav">
+                <button class="header__navclose">
+                    <i class="header__icon zmdi zmdi-close zmdi-hc-2x"></i>
+                </button>
+                <a class="header__navitem" href="../admin/users.html">Usuários</a>
+                <a class="header__navitem header__navitem--active" href="../admin/products.html">Produtos</a>
+                <a class="header__navitem" href="../admin/sells.html">Relatórios</a>
+                <a class="header__navitem" href="#">Sair</a>
+            </nav>
+            <div>
+                <a class="header__account" href="../admin/users.html">
+                    <i class="header__icon zmdi zmdi-account-circle zmdi-hc-2x"></i>
+                    Admin
+                </a>
+                <button class="header__navopen">
+                    <i class="header__icon zmdi zmdi-menu zmdi-hc-2x"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="admin">
+        <div class="admin__content container">
+            <h1 class="admin__title">Produtos</h1>
+            <div class="admin__flex">
+                <div class="admin__nav">
+                    <a href="../admin/products.html">Itens</a>
+                    <a class="active" href="../admin/categories.html">Categorias</a>
+                </div>
+                <div class="admin__manager">
+                    <h2 class="admin__subtitle">Categorias</h2>
+                    <table class="admin__table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Posição</th>
+                            <th>Ações</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Nome da Categoria</td>
+                            <td>1</td>
+                            <td>
+                                <a href="../admin/edit_category.html"> 
+                                    <i class="admin__icon zmdi zmdi-edit zmdi-hc-2x"></i>
+                                </a>
+                                <i class="admin__icon zmdi zmdi-pause zmdi-hc-2x"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Nome da Categoria</td>
+                            <td>1</td>
+                            <td>
+                                <a href="../admin/edit_category.html"> 
+                                    <i class="admin__icon zmdi zmdi-edit zmdi-hc-2x"></i>
+                                </a>
+                                <i class="admin__icon zmdi zmdi-pause zmdi-hc-2x"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Nome da Categoria</td>
+                            <td>1</td>
+                            <td>
+                                <a href="../admin/edit_category.html"> 
+                                    <i class="admin__icon zmdi zmdi-edit zmdi-hc-2x"></i>
+                                </a>
+                                <i class="admin__icon zmdi zmdi-pause zmdi-hc-2x"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Nome da Categoria</td>
+                            <td>1</td>
+                            <td>
+                                <a href="../admin/edit_category.html"> 
+                                    <i class="admin__icon zmdi zmdi-edit zmdi-hc-2x"></i>
+                                </a>
+                                <i class="admin__icon zmdi zmdi-pause zmdi-hc-2x"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Nome da Categoria</td>
+                            <td>1</td>
+                            <td>
+                                <a href="../admin/edit_category.html"> 
+                                    <i class="admin__icon zmdi zmdi-edit zmdi-hc-2x"></i>
+                                </a>
+                                <i class="admin__icon zmdi zmdi-pause zmdi-hc-2x"></i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Nome da Categoria</td>
+                            <td>1</td>
+                            <td>
+                                <a href="../admin/edit_category.html"> 
+                                    <i class="admin__icon zmdi zmdi-edit zmdi-hc-2x"></i>
+                                </a>
+                                <i class="admin__icon zmdi zmdi-pause zmdi-hc-2x"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <a href="../admin/add_category.html" class="admin__add button">Adicionar categoria</a>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/common.js"></script>
+</body>
+</html>

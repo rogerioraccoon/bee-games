@@ -1,0 +1,18 @@
+.account {
+  padding: 50px 0;
+  text-align: center; }
+  .account__title {
+    font-size: 3rem;
+    margin: 25px 0 50px 0;
+    color: #5A6978;
+    font-weight: bold; }
+  .account__subtitle {
+    font-size: 2rem;
+    margin: 25px 0;
+    color: #5A6978;
+    font-weight: bold; }
+  .account .input,
+  .account .button {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto; }

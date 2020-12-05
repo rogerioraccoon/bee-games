@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega | Bee Games</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/address.css">
+
+    <link href="favicon.png" rel="icon"/>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content container">
+            <img class="header__logo" src="images/logo.jpg" alt="Bee Games" title="Bee Games" />
+            <nav class="header__nav">
+                <button class="header__navclose">
+                    <i class="header__icon zmdi zmdi-close zmdi-hc-2x"></i>
+                </button>
+                <a class="header__navitem" href="index.html">Lançamentos</a>
+                <a class="header__navitem" href="#">Ação</a>
+                <a class="header__navitem" href="#">Aventura</a>
+                <a class="header__navitem" href="#">Estratégia</a>
+                <a class="header__navitem" href="#">Esporte</a>
+                <a class="header__navitem" href="#">Simulação</a>
+            </nav>
+            <div>
+                <a class="header__account" href="login.html">
+                    <i class="header__icon zmdi zmdi-account-circle zmdi-hc-2x"></i>
+                </a>
+                <a class="header__cart" href="cart.html">
+                    <i class="header__icon zmdi zmdi-shopping-cart zmdi-hc-2x"></i>
+                </a>
+                <button class="header__navopen">
+                    <i class="header__icon zmdi zmdi-menu zmdi-hc-2x"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    
+    <section class="address">
+        <div class="container">
+            <h1 class="address__title">Seu carrinho</h1>
+            <div class="address__content">
+                <div class="address__steps">
+                    <a href="cart.html">Produtos</a>
+                    <a class="active" href="address.html">Endereço</a>
+                    <a href="payment.html">Pagamento</a>
+                </div>
+                <div class="address__details">
+                    <div class="address__flex">
+                        <div class="address__information">
+                            <h2 class="address__subtitle">Entrega</h2>
+                            <div class="address__current">
+                                <p>
+                                    Rua Professora Stella Germano, 60 <br/>
+                                    Ap. 12 <br/>
+                                    13561-090 <br/>
+                                    Jardim Paraíso - São Carlos - SP
+                                </p>
+                            </div>
+                        </div>
+                        <div class="address__form">
+                            <h2 class="address__subtitle">Alterar Endereço</h2>
+                            <input class="input" placeholder="CEP" />
+                            <input class="input" placeholder="Rua e Número" />
+                            <input class="input" placeholder="Complemento" />
+                            <button class="button">Alterar Endereço</button>
+                        </div>
+                    </div>
+                    <p class="address__summary">Total R$ 360,00</p>
+                    <a href="payment.html" class="address__next button">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+</body>
+</html>

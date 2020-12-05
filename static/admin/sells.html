@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Vendas | Bee Games</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/admin.css">
+
+    <link href="../favicon.png" rel="icon"../>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content container">
+            <img class="header__logo" src="../images/logo.jpg" alt="Bee Games" title="Bee Games" />
+            <nav class="header__nav">
+                <button class="header__navclose">
+                    <i class="header__icon zmdi zmdi-close zmdi-hc-2x"></i>
+                </button>
+                <a class="header__navitem" href="../admin/users.html">Usuários</a>
+                <a class="header__navitem" href="../admin/products.html">Produtos</a>
+                <a class="header__navitem header__navitem--active" href="../admin/sells.html">Relatórios</a>
+                <a class="header__navitem" href="#">Sair</a>
+            </nav>
+            <div>
+                <a class="header__account" href="../admin/users.html">
+                    <i class="header__icon zmdi zmdi-account-circle zmdi-hc-2x"></i>
+                    Admin
+                </a>
+                <button class="header__navopen">
+                    <i class="header__icon zmdi zmdi-menu zmdi-hc-2x"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="admin">
+        <div class="admin__content container">
+            <h1 class="admin__title">Relatórios</h1>
+            <div class="admin__flex">
+                <div class="admin__nav">
+                    <a class="active" href="../admin/sells.html">Vendas</a>
+                    <a href="../admin/sells_product.html">Produtos</a>
+                </div>
+                <div class="admin__manager">
+                    <h2 class="admin__subtitle">Vendas</h2>
+                    <div class="admin__filter">
+                        <p>Período: </p>
+                        <input class="input" value="01/10/2020">
+                        <input class="input" value="31/10/2020">
+                    </div>
+                    <table class="admin__table">
+                        <tr>
+                            <th>Data</th>
+                            <th>ID Pedido</th>
+                            <th>Quantidade</th>
+                            <th>Valor</th>
+                        </tr>
+                        <tr>
+                            <td>10/10/2020 10:20</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>R$ 320,00</td>
+                        </tr>
+                        <tr>
+                            <td>10/10/2020 10:20</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>R$ 320,00</td>
+                        </tr>
+                        <tr>
+                            <td>10/10/2020 10:20</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>R$ 320,00</td>
+                        </tr>
+                        <tr>
+                            <td>10/10/2020 10:20</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>R$ 320,00</td>
+                        </tr>
+                        <tr>
+                            <td>10/10/2020 10:20</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>R$ 320,00</td>
+                        </tr>
+                        <tr>
+                            <td>10/10/2020 10:20</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>R$ 320,00</td>
+                        </tr>
+                    </table>
+                    <button class="button admin__add">Baixar dados</button>
+                </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="../js/common.js"></script>
+</body>
+</html>

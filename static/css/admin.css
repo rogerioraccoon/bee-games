@@ -1,0 +1,108 @@
+.admin {
+  min-height: calc(100vh - 95px - 70px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 50px 0; }
+  .admin__content {
+    overflow-x: auto; }
+  .admin__title {
+    font-size: 3rem;
+    color: #5A6978;
+    font-weight: bold;
+    margin: 0 0 25px 0; }
+  .admin__nav {
+    margin: 0 0 25px 0; }
+    .admin__nav a {
+      color: #5A6978;
+      text-decoration: none;
+      margin-right: 10px;
+      font-size: 18px; }
+      .admin__nav a.active {
+        font-weight: bold; }
+    @media (min-width: 1024px) {
+      .admin__nav {
+        padding: 0 50px 0 0;
+        border-right: 1px solid #5A6978;
+        margin: 0; }
+        .admin__nav a {
+          display: block;
+          margin: 20px 0; } }
+  .admin__subtitle {
+    font-size: 2rem;
+    color: #5A6978;
+    font-weight: bold;
+    margin: 0 0 25px 0; }
+  .admin__table {
+    width: 100%;
+    border: 1px solid #5A6978;
+    border-collapse: collapse;
+    font-size: 16px;
+    color: #5A6978; }
+    .admin__table th {
+      background-color: #5A6978;
+      font-weight: bold;
+      color: #ffffff;
+      border: 1px solid #ffffff; }
+    .admin__table td,
+    .admin__table th {
+      padding: 10px; }
+    .admin__table tr,
+    .admin__table td {
+      border: 1px solid #5A6978; }
+    .admin__table img {
+      width: 50px;
+      height: auto; }
+    .admin__table a {
+      color: #5A6978;
+      text-decoration: none; }
+  .admin__icon {
+    margin: 0 10px;
+    cursor: pointer; }
+  @media (min-width: 1024px) {
+    .admin__flex {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  @media (min-width: 1024px) {
+    .admin__manager {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      margin-left: 50px; } }
+  .admin__add {
+    max-width: 300px;
+    margin: 50px 0 0 auto; }
+  .admin__information {
+    color: #5A6978;
+    line-height: 1.4;
+    font-size: 16px; }
+  .admin__filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 350px;
+    margin-left: auto; }
+    .admin__filter input {
+      margin-left: 10px;
+      padding: 16px; }
+    .admin__filter p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #5A6978; }
+  .admin__form {
+    max-width: 400px;
+    margin: 50px 0; }
+  .admin__stock {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #5A6978; }
+    .admin__stock p {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .admin__stock i {
+      margin: 0 10px;
+      cursor: pointer; }

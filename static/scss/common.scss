@@ -1,0 +1,221 @@
+@import "colors";
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+    font-display: swap;
+}
+
+
+html {
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+
+    @media(min-width: 1024px) {
+        font-size: 16px;
+    }
+}
+
+
+.container {
+    margin-left: 20px;
+    margin-right: 20px;
+
+    @media(min-width: 768px) {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    @media(min-width: 1024px) {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+    @media(min-width: 1440px) {
+        margin-left: calc( (100vw - 1300px) / 2 );
+        margin-right: calc( (100vw - 1300px) / 2 );
+    }
+}
+
+.header {
+    background-color: $primary-color;
+    padding: 5px 0;
+
+    @media(min-width: 1024px) {
+        padding: 10px 0;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        width: 75px;
+        height: auto;
+
+        @media(min-width: 1024px) {
+            width: 150px;
+        }
+    }
+
+    &__icon {
+        color: #ffffff;
+    }
+
+    &__cart {
+        margin-left: 10px;
+        text-decoration: none;
+    }
+
+    &__account {
+        text-decoration: none;
+        color: #ffffff;
+        display: inline-flex;
+        align-items: center;
+
+        i {
+            margin-right: 5px;
+        }
+    }
+
+    &__nav {
+        background-color: $primary-color;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        transform: translateX(100vw);
+        padding: 20px;
+        box-sizing: border-box;
+        transition: transform 0.25s;
+
+        &--active {
+            transform: translateX(0);
+        }
+
+        &item {
+            color: #ffffff;
+            padding: 10px 0;
+            margin: 10px 0;
+            display: block;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        @media(min-width: 1024px) {
+            position: static;
+            width: auto;
+            height: auto;
+            display: flex;
+            min-height: auto;
+            transform: translateX(0);
+            padding: 0;
+
+            &item {
+                padding: 10px;
+                margin: 0 5px;
+                font-size: 18px;
+
+                &--active {
+                    background-color: $second-color;
+                    color: $primary-color;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    &__navopen {
+        border: 0;
+        background-color: transparent;
+        margin-left: 10px;
+
+        @media(min-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__navclose {
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        @media(min-width: 1024px) {
+            display: none;
+        }
+    }
+}
+
+.footer {
+    background-color: $primary-color;
+    padding: 10px 0;
+
+    &__copyright {
+        font-size: 16px;
+        text-align: center;
+        color: #ffffff;
+
+        @media(min-width: 1024px) {
+            text-align: left;
+        }
+    }
+}
+
+.input {
+    display: block;
+    appearance: none;
+    font-size: 16px;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 16px 0 16px 24px;
+    margin: 0 0 10px 0;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border-radius: 5px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.button {
+    display: block;
+    font-size: 16px;
+    border: 0;
+    background-color: $primary-color;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 16px 24px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 0 10px 0;
+
+    &--alternative {
+        background-color: $second-color;
+        color: $primary-color;
+    }
+
+    &--border {
+        background-color: #ffffff;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+    }
+}

@@ -1,0 +1,37 @@
+.account {
+  padding: 50px 0; }
+  @media (min-width: 768px) {
+    .account__content {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  .account__title {
+    font-size: 3rem;
+    color: #5A6978;
+    font-weight: bold;
+    margin: 25px 0 50px 0; }
+  .account__subtitle {
+    font-size: 2rem;
+    color: #5A6978;
+    margin: 50px 0 25px 0; }
+  @media (min-width: 768px) {
+    .account__nav {
+      padding: 0 50px 0 0;
+      border-right: 1px solid #5A6978; } }
+  .account__menu a {
+    color: #5A6978;
+    text-decoration: none;
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 16px; }
+    .account__menu a.active {
+      font-weight: bold; }
+  @media (min-width: 768px) {
+    .account__update {
+      margin-left: 50px;
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1; } }
+  .account .input,
+  .account .button {
+    max-width: 600px; }

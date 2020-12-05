@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar sua conta | Bee Games</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/create_account.css">
+
+    <link href="favicon.png" rel="icon"/>
+</head>
+<body>
+    <header class="header">
+        <div class="header__content container">
+            <img class="header__logo" src="images/logo.jpg" alt="Bee Games" title="Bee Games" />
+            <nav class="header__nav">
+                <button class="header__navclose">
+                    <i class="header__icon zmdi zmdi-close zmdi-hc-2x"></i>
+                </button>
+                <a class="header__navitem" href="index.html">Lançamentos</a>
+                <a class="header__navitem" href="#">Ação</a>
+                <a class="header__navitem" href="#">Aventura</a>
+                <a class="header__navitem" href="#">Estratégia</a>
+                <a class="header__navitem" href="#">Esporte</a>
+                <a class="header__navitem" href="#">Simulação</a>
+            </nav>
+            <div>
+                <a class="header__account" href="login.html">
+                    <i class="header__icon zmdi zmdi-account-circle zmdi-hc-2x"></i>
+                </a>
+                <a class="header__cart" href="cart.html">
+                    <i class="header__icon zmdi zmdi-shopping-cart zmdi-hc-2x"></i>
+                </a>
+                <button class="header__navopen">
+                    <i class="header__icon zmdi zmdi-menu zmdi-hc-2x"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="account">
+        <div class="container">
+            <h1 class="account__title">Criar sua conta</h1>
+
+            <h2 class="account__subtitle">Informações para acesso</h2>
+            <input class="input" type="text" placeholder="Nome Completo" />
+            <input class="input" type="text" placeholder="Telefone" />
+            <input class="input" type="text" placeholder="E-mail" />
+            <input class="input" type="text" placeholder="Senha" />
+            <input class="input" type="text" placeholder="Repita sua senha" />
+            
+            <h2 class="account__subtitle">Endereço</h2>
+            <input class="input" type="text" placeholder="CEP" />
+            <input class="input" type="text" placeholder="Rua e número" />
+            <input class="input" type="text" placeholder="Complemento" />
+            <button class="button">Criar cadastro</button>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copyright">© Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/common.js"></script>
+</body>
+</html>
